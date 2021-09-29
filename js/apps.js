@@ -33,3 +33,20 @@ btn-primary'>Go somewhere</a>
         );
 }
 render();
+let texto = "me gusta programar durante todas las horas"
+let nombre3 = "Luis Navas"
+//let saludo = "Hola soy:" +nombre2+ "y" +texto;
+let saludo = ` <h3> Hola soy:${nombre3} y ${texto}</h3>`; 
+let contenedor = document.getElementById('root');
+contenedor.innerHTML+=saludo;
+
+function nombreCompleto(nombre2,apallido){
+ return `${nombre2} ${apellido}`;
+}
+console.log(nombreCompleto("Ivana", "Pelayes"));
+console.log(nombreCompleto("Ivana"));
+/*
+const nombre_function=(nombre, apellido)=>{
+    return` con arrow function ${nombre} ${apellido}`;
+};
+console.log(nombre_function("Luis", "Navas")); */
